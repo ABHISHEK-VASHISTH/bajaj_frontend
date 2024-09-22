@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bajaj_frontend</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>JSON Input Processor</h1>
+
+    <div class="input-section">
+      <label for="jsonInput">Enter JSON Data:</label>
+      <textarea id="jsonInput" placeholder='e.g., { "data": ["A", "C", "z", 1, 3] }'></textarea>
+      <button id="submitBtn">Submit</button>
+      <p id="errorMessage"></p>
+    </div>
+
+ 
+    <div id="dropdown-section" class="hidden">
+      <label for="filterOptions">Select Data Filters:</label>
+      <select id="filterOptions" multiple>
+        <option value="alphabets">Alphabets</option>
+        <option value="numbers">Numbers</option>
+        <option value="lowercase">Highest Lowercase Alphabet</option>
+      </select>
+      <button id="filterBtn">Apply Filter</button>
+    </div>
+
+ 
+    <div id="resultSection">
+      <h2>Filtered Response:</h2>
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
